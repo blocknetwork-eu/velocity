@@ -29,8 +29,8 @@ jobs:
         id: build-and-push
         uses: docker/build-push-action@v6
         with:
-          build-args:
-            - VELOCITY_VERSION=3.4.0-SNAPSHOT
-            - VELOCITY_BUILD=438
+          build-args: |
+            VELOCITY_VERSION=3.4.0-SNAPSHOT
+            VELOCITY_BUILD=438
           push: true
           tags: ghcr.io/${{ github.repository }}:latest
