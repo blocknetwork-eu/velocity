@@ -31,6 +31,6 @@ jobs:
         with:
           build-args: |
             VELOCITY_VERSION=3.4.0-SNAPSHOT
-            VELOCITY_BUILD=438
+            VELOCITY_BUILD=469
           push: true
           tags: ghcr.io/${{ github.repository }}:latest
